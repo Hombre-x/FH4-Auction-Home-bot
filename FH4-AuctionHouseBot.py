@@ -35,9 +35,11 @@ def on_press(key):
         print("bot invoked")
         while True:
             pyautogui.press("enter")
-            time.sleep(0.3)
+            time.sleep(0.4)
             pyautogui.press("enter")
             time.sleep(1)
+
+        # Si encuentra subasta
             pyautogui.press("y")
             time.sleep(0.1)
             pyautogui.press("down")
@@ -46,6 +48,8 @@ def on_press(key):
             time.sleep(0.1)
             pyautogui.press("enter")
             time.sleep(0.1)
+
+        # Si no la encuentra
             pyautogui.press("esc")
             time.sleep(1)
             print("cicle complete")
